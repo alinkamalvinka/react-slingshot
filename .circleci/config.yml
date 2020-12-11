@@ -9,9 +9,9 @@ defaults: &defaults
 jobs:
   build:
   <<: *defaults
-  steps:
-    - checkout
-    - run: npm run lint
+    steps:
+      - checkout
+      - run: npm run lint
 
   test:
   <<: *defaults
